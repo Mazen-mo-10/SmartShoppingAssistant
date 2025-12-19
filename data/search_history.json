@@ -1,0 +1,169 @@
+[
+  {
+    "time": "2025-12-19 18:16:59",
+    "query": "4k lg tv 55 inch",
+    "attrs": {
+      "lang": "en",
+      "product": "tv",
+      "brand": "lg",
+      "color": null,
+      "size": 55,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "screen_inch": "55"
+      },
+      "quality_level": null,
+      "tokens": [
+        "4k",
+        "lg",
+        "tv",
+        "55",
+        "inch"
+      ],
+      "budget": null
+    },
+    "count": 6
+  },
+  {
+    "time": "2025-12-19 17:58:35",
+    "query": "4k lg tv 55 inch",
+    "attrs": {
+      "lang": "en",
+      "product": "tv",
+      "brand": "lg",
+      "color": null,
+      "size": 55,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "screen_inch": "55"
+      },
+      "quality_level": null,
+      "tokens": [
+        "4k",
+        "lg",
+        "tv",
+        "55",
+        "inch"
+      ],
+      "budget": null
+    },
+    "count": 6
+  },
+  {
+    "time": "2025-12-19 06:36:30",
+    "query": "laptop with 16GB RAM",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 18
+  },
+  {
+    "time": "2025-12-19 06:00:39",
+    "query": "شنطه كتف سوده",
+    "attrs": {
+      "lang": "ar",
+      "product": null,
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "شنطه",
+        "كتف",
+        "سوده"
+      ],
+      "budget": null
+    },
+    "count": 27
+  },
+  {
+    "time": "2025-12-19 05:25:00",
+    "query": "laptop with 16GB RAM",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 18
+  },
+  {
+    "time": "2025-12-19 05:14:50",
+    "query": "laptop with 16GB RAM",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 18
+  }
+]
