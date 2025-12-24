@@ -115,8 +115,9 @@ def crawl_all_platforms(
     print("🚀 Starting concurrent crawl of all platforms...")
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
         futures = {
+            
             executor.submit(crawl_amazon): "Amazon",
-            executor.submit(crawl_noon): "Noon",
+            #executor.submit(crawl_noon): "Noon",
             executor.submit(crawl_jumia): "Jumia",
         }
         

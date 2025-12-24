@@ -14,6 +14,13 @@ from nlp.attribute_extraction_enhanced import extract_enhanced_attributes
 from nlp.utils import clean_price_egp
 from search.search_engine_enhanced import search_products_enhanced
 
+# Import price classifier model
+try:
+    from models.price_classifier import price_classifier
+except ImportError:
+    price_classifier = None
+    print("⚠️ Price classifier not available yet. Run the notebook first.")
+
 # Ensure project root is in path
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 if BASE_DIR not in sys.path:
@@ -314,9 +321,25 @@ def render_product_card_enhanced(row: pd.Series, show_relevance: bool = True):
 
         st.markdown(f"#### {name[:100]}{'...' if len(name) > 100 else ''}")
         
-        # Price with formatting
+        # Price with formatting + Price Classification Badge
         price_display = format_price_display(price)
-        st.markdown(f"### 💰 {price_display}")
+        
+        # Get price classification from model
+        price_badge = ""
+        if price_classifier and price_classifier.loaded:
+            try:
+                result = price_classifier.predict(name, "", price)
+                if result:
+                    # Pass current language to badge generator
+                    current_lang = st.session_state.get('language', 'ar')
+                    price_badge = price_classifier.get_badge_markdown(result, language=current_lang)
+                    st.markdown(f"### 💰 {price_display} {price_badge}")
+                else:
+                    st.markdown(f"### 💰 {price_display}")
+            except Exception as e:
+                st.markdown(f"### 💰 {price_display}")
+        else:
+            st.markdown(f"### 💰 {price_display}")
         
         # Rating with stars - improved styling without borders
         if rating_numeric and rating_numeric > 0:

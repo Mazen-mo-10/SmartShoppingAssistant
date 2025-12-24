@@ -13,3 +13,8 @@ nltk>=3.8.0
 arabic-reshaper>=3.0.0
 python-bidi>=0.4.2
 
+# Machine Learning (for Price Classifier)
+scikit-learn>=1.0.0
+joblib>=1.1.0
+matplotlib>=3.5.0
+seaborn>=0.12.0

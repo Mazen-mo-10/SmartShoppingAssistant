@@ -1,5 +1,616 @@
 [
   {
+    "time": "2025-12-24 10:08:06",
+    "query": "'samsung s25 ultra'\n",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 17
+  },
+  {
+    "time": "2025-12-24 09:26:27",
+    "query": "'samsung s25 ultra'\n",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 17
+  },
+  {
+    "time": "2025-12-24 09:25:53",
+    "query": "'samsung s25 ultra",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 17
+  },
+  {
+    "time": "2025-12-24 09:19:27",
+    "query": "samsung s25 ultra",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 17
+  },
+  {
+    "time": "2025-12-24 08:31:23",
+    "query": "samsung s25 ultra",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 17
+  },
+  {
+    "time": "2025-12-24 07:01:30",
+    "query": "samsung s25 ultra",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 17
+  },
+  {
+    "time": "2025-12-24 06:38:46",
+    "query": "samsung s25 ultra",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 17
+  },
+  {
+    "time": "2025-12-24 06:33:39",
+    "query": "samsung s25 ultra ",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 17
+  },
+  {
+    "time": "2025-12-24 06:27:00",
+    "query": "samsung s25 ultra",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 17
+  },
+  {
+    "time": "2025-12-24 06:18:53",
+    "query": "samsung s25 ultra",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 17
+  },
+  {
+    "time": "2025-12-24 06:16:56",
+    "query": "samsung s25 ultra",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 17
+  },
+  {
+    "time": "2025-12-24 04:49:26",
+    "query": "laptop with 16GB RAM",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 20
+  },
+  {
+    "time": "2025-12-24 04:46:16",
+    "query": "iphone 17 pro max",
+    "attrs": {
+      "lang": "en",
+      "product": "phone",
+      "brand": "apple",
+      "color": null,
+      "size": 17,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "iphone",
+        "17",
+        "pro",
+        "max"
+      ],
+      "budget": null
+    },
+    "count": 15
+  },
+  {
+    "time": "2025-12-24 01:01:38",
+    "query": "macbook 32ram 1tera",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_tb": "1"
+      },
+      "quality_level": null,
+      "tokens": [
+        "macbook",
+        "32ram",
+        "1tera"
+      ],
+      "budget": null
+    },
+    "count": 15
+  },
+  {
+    "time": "2025-12-24 01:00:59",
+    "query": "macbook",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "macbook"
+      ],
+      "budget": null
+    },
+    "count": 30
+  },
+  {
+    "time": "2025-12-24 01:00:29",
+    "query": "ibad pro",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "ibad",
+        "pro"
+      ],
+      "budget": null
+    },
+    "count": 15
+  },
+  {
+    "time": "2025-12-24 00:59:31",
+    "query": "ibad ",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "ibad"
+      ],
+      "budget": null
+    },
+    "count": 15
+  },
+  {
+    "time": "2025-12-24 00:57:54",
+    "query": "samsung s25 ultr",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultr"
+      ],
+      "budget": null
+    },
+    "count": 16
+  },
+  {
+    "time": "2025-12-24 00:32:55",
+    "query": "4k lg tv 55 inch",
+    "attrs": {
+      "lang": "en",
+      "product": "tv",
+      "brand": "lg",
+      "color": null,
+      "size": 55,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "screen_inch": "55"
+      },
+      "quality_level": null,
+      "tokens": [
+        "4k",
+        "lg",
+        "tv",
+        "55",
+        "inch"
+      ],
+      "budget": null
+    },
+    "count": 6
+  },
+  {
+    "time": "2025-12-24 00:32:21",
+    "query": "laptop with 16GB RAM",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 18
+  },
+  {
+    "time": "2025-12-24 00:30:39",
+    "query": "samsung s25 ultr",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultr"
+      ],
+      "budget": null
+    },
+    "count": 16
+  },
+  {
+    "time": "2025-12-19 21:19:22",
+    "query": "samsung phone under 10000",
+    "attrs": {
+      "lang": "en",
+      "product": "phone",
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": 10000,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "phone",
+        "10000"
+      ],
+      "budget": 10000
+    },
+    "count": 4
+  },
+  {
+    "time": "2025-12-19 21:13:37",
+    "query": "samsung s25 ultra",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 17
+  },
+  {
+    "time": "2025-12-19 18:22:03",
+    "query": "laptop with 16GB RAM",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 17
+  },
+  {
     "time": "2025-12-19 18:16:59",
     "query": "4k lg tv 55 inch",
     "attrs": {
