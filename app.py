@@ -965,8 +965,8 @@ sort_dir = st.sidebar.radio(
 )
 
 st.sidebar.markdown("---")
-tips_en = "💡 **Tip:** Try queries like:\n- 'samsung s25 ultra'\n- 'laptop with 16GB RAM'\n- '4k lg tv 55 inch'"
-tips_ar = "💡 **نصيحة:** جرب استفسارات مثل:\n- 'هاتف سامسونج تحت 10000'\n- 'لابتوب بذاكرة 16 جيجا'"
+tips_en = "💡 **Tip:** Try queries like:\n-'large black t-shirt'\n-'laptop with 16GB RAM'\n- '4k lg tv 55 inch'"
+tips_ar = "💡 **نصيحة:** جرب استفسارات مثل:\n- 'هاتف سامسونج تحت 10000'\n- 'تيشيرت اسود كبير'"
 st.sidebar.info(tips_en if st.session_state.language == "en" else tips_ar)
 
 # =========================
