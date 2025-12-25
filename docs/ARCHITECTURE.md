@@ -93,38 +93,6 @@
 
 ---
 
-## 🔄 Data Flow - من البحث إلى النتيجة
-
-```
-SEARCH QUERY
-    ↓
-    │ استخلاص المواصفات
-    ↓
-EXTRACT ATTRIBUTES
-    ↓
-    │ البحث على المنصات
-    ↓
-FETCH PRODUCTS
-    ↓
-    │ تنقية وتصفية
-    ↓
-CLEAN & FILTER
-    ↓
-    │ ترتيب وتصنيف
-    ↓
-RANK & SORT
-    ↓
-    │ 🆕 تصنيف الأسعار
-    ↓
-PRICE CLASSIFICATION
-(TF-IDF + Random Forest)
-    ↓
-DISPLAY WITH BADGES
-(🟢 🟡 🔴)
-```
-
----
-
 ## 📁 Project Structure
 
 ```

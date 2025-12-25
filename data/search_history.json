@@ -1,5 +1,620 @@
 [
   {
+    "time": "2025-12-24 16:05:27",
+    "query": "'laptop with 16GB RAM'\n",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 15
+  },
+  {
+    "time": "2025-12-24 15:24:38",
+    "query": "ساعة هواوي \n",
+    "attrs": {
+      "lang": "ar",
+      "product": "watch",
+      "brand": "huawei",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "ساعه",
+        "هواوي"
+      ],
+      "budget": null
+    },
+    "count": 0
+  },
+  {
+    "time": "2025-12-24 15:24:07",
+    "query": " Laptop 16 ram  \n",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": 16,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 15
+  },
+  {
+    "time": "2025-12-24 15:23:51",
+    "query": " Laptop 16 ram lenovo ideapad gaming 3",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": "lenovo",
+      "color": null,
+      "size": 16,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16",
+        "ram",
+        "lenovo",
+        "ideapad",
+        "gaming",
+        "3"
+      ],
+      "budget": null
+    },
+    "count": 0
+  },
+  {
+    "time": "2025-12-24 15:21:18",
+    "query": "Laptop 16 ram lenovo ideapad gaming 3 \n",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": "lenovo",
+      "color": null,
+      "size": 16,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16",
+        "ram",
+        "lenovo",
+        "ideapad",
+        "gaming",
+        "3"
+      ],
+      "budget": null
+    },
+    "count": 0
+  },
+  {
+    "time": "2025-12-24 15:11:52",
+    "query": "'laptop with 16GB RAM'\n",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 41
+  },
+  {
+    "time": "2025-12-24 14:52:43",
+    "query": "'laptop with 16GB RAM'\n",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 15
+  },
+  {
+    "time": "2025-12-24 14:45:40",
+    "query": "'laptop with 16GB RAM'\n",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 15
+  },
+  {
+    "time": "2025-12-24 14:38:57",
+    "query": "'samsung s25 ultra'\n",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 15
+  },
+  {
+    "time": "2025-12-24 14:34:35",
+    "query": "VIVO Y 36\n",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "vivo",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "vivo",
+        "y",
+        "36"
+      ],
+      "budget": null
+    },
+    "count": 38
+  },
+  {
+    "time": "2025-12-24 13:04:24",
+    "query": "'laptop with 16GB RAM'\n",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 15
+  },
+  {
+    "time": "2025-12-24 13:03:43",
+    "query": "'laptop with 16GB RAM'\n",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 15
+  },
+  {
+    "time": "2025-12-24 13:03:18",
+    "query": "'samsung s25 ultra'\n",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 15
+  },
+  {
+    "time": "2025-12-24 12:58:35",
+    "query": "'samsung s25 ultra'\n",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 45
+  },
+  {
+    "time": "2025-12-24 12:50:31",
+    "query": "'samsung s25 ultra'\n",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 44
+  },
+  {
+    "time": "2025-12-24 12:46:50",
+    "query": "'samsung s25 ultra'\n",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 44
+  },
+  {
+    "time": "2025-12-24 12:46:33",
+    "query": "'samsung s25 ultra'\n",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 44
+  },
+  {
+    "time": "2025-12-24 12:42:01",
+    "query": "'samsung s25 ultra'\n",
+    "attrs": {
+      "lang": "en",
+      "product": null,
+      "brand": "samsung",
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {},
+      "quality_level": null,
+      "tokens": [
+        "samsung",
+        "s25",
+        "ultra"
+      ],
+      "budget": null
+    },
+    "count": 44
+  },
+  {
+    "time": "2025-12-24 12:39:30",
+    "query": "'laptop with 16GB RAM'\n",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 43
+  },
+  {
+    "time": "2025-12-24 12:35:39",
+    "query": "laptop with 16GB RAM",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 28
+  },
+  {
+    "time": "2025-12-24 12:33:07",
+    "query": "'laptop with 16GB RAM'\n",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 28
+  },
+  {
+    "time": "2025-12-24 12:11:00",
+    "query": "'laptop with 16GB RAM'\n\n",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 28
+  },
+  {
+    "time": "2025-12-24 12:05:11",
+    "query": "'laptop with 16GB RAM'\n\n",
+    "attrs": {
+      "lang": "en",
+      "product": "laptop",
+      "brand": null,
+      "color": null,
+      "size": null,
+      "price_range": {
+        "min": null,
+        "max": null,
+        "target": null
+      },
+      "features": {
+        "storage_gb": "16",
+        "ram_gb": "16"
+      },
+      "quality_level": null,
+      "tokens": [
+        "laptop",
+        "16gb",
+        "ram"
+      ],
+      "budget": null
+    },
+    "count": 28
+  },
+  {
     "time": "2025-12-24 10:08:06",
     "query": "'samsung s25 ultra'\n",
     "attrs": {

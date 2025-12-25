@@ -282,7 +282,7 @@ def render_product_card_enhanced(row: pd.Series, show_relevance: bool = True):
         # Improved image display with error handling
         if img and is_valid_image_url(img):
             try:
-                st.image(img, width=280, use_container_width=False)
+                st.image(img, width='content')
             except:
                 st.markdown(
                     f'<div style="width:280px;height:280px;border-radius:12px;'
@@ -361,7 +361,7 @@ def render_product_card_enhanced(row: pd.Series, show_relevance: bool = True):
             if link_str.startswith(("http://", "https://")) and link_str != "https://#":
                 button_text = f"🛒 View on {site_info['label']}"
                 try:
-                    st.link_button(button_text, link_str, use_container_width=True, type="primary")
+                    st.link_button(button_text, link_str, width='stretch', type="primary")
                 except Exception as e:
                     # Fallback to markdown link if button fails
                     st.markdown(
@@ -896,7 +896,7 @@ st.sidebar.markdown(f"### {t('filters')}")
 st.sidebar.markdown(f"#### {t('website_filter')}")
 website_options = ["Amazon", "Noon", "Jumia"]
 website_filter = st.sidebar.multiselect(
-    "",
+    "Filter by website",
     options=website_options,
     default=st.session_state.website_filter if set(st.session_state.website_filter).issubset(set(website_options)) else website_options,
     label_visibility="collapsed"
@@ -974,7 +974,7 @@ st.sidebar.info(tips_en if st.session_state.language == "en" else tips_ar)
 # =========================
 
 user_input = st.text_area(
-    "",
+    "Filter by website",
     placeholder=t("search_placeholder"),
     height=120,
     help="Describe the product in Arabic or English" if st.session_state.language == "en" else "اوصف المنتج بالعربية أو الإنجليزية",
@@ -982,7 +982,7 @@ user_input = st.text_area(
 )
 
 # Centered search button - full width
-search_clicked = st.button(t("search_button"), use_container_width=True, type="primary")
+search_clicked = st.button(t("search_button"), width='stretch', type="primary")
 
 # =========================
 # Search Processing
@@ -1163,7 +1163,7 @@ if not results_df.empty:
         
         with col_prev:
             prev_disabled = st.session_state.current_page == 0
-            if st.button("⬅️", disabled=prev_disabled, use_container_width=True, key="prev_page"):
+            if st.button("⬅️", disabled=prev_disabled, width='stretch', key="prev_page"):
                 st.session_state.current_page = max(0, st.session_state.current_page - 1)
                 st.rerun()
         
@@ -1175,7 +1175,7 @@ if not results_df.empty:
         
         with col_next:
             next_disabled = st.session_state.current_page >= total_pages - 1
-            if st.button("➡️", disabled=next_disabled, use_container_width=True, key="next_page"):
+            if st.button("➡️", disabled=next_disabled, width='stretch', key="next_page"):
                 st.session_state.current_page = min(total_pages - 1, st.session_state.current_page + 1)
                 st.rerun()
         
@@ -1228,7 +1228,7 @@ with bottom_tab_history:
             if st.button(
                 f"🕐 {timestamp} | 📝 {query} | ({count} results)",
                 key=f"history_{idx}",
-                use_container_width=True,
+                width='stretch',
                 help="Click to view this search again"
             ):
                 # Re-run search with this query

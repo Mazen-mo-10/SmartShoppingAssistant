@@ -117,7 +117,7 @@ def crawl_all_platforms(
         futures = {
             
             executor.submit(crawl_amazon): "Amazon",
-            #executor.submit(crawl_noon): "Noon",
+            executor.submit(crawl_noon): "Noon",
             executor.submit(crawl_jumia): "Jumia",
         }
         

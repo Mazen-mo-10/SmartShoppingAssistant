@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-crawl_jumia.py - Jumia Egypt Scraper
+crawl_jumia.py - Jumia Egypt Scraper (FIXED VERSION)
 """
 
 import os
@@ -134,8 +134,14 @@ def parse_search_results(html: str) -> List:
     return items
 
 
-def extract_from_result_item(item) -> Dict[str, str]:
-    """Extract basic product info from Jumia search result item."""
+def extract_from_result_item(item, current_url: Optional[str] = None) -> Dict[str, str]:
+    """
+    Extract basic product info from Jumia search result item.
+    
+    Args:
+        item: BeautifulSoup element containing product info
+        current_url: The current page URL (used when on product detail pages)
+    """
     data = {
         "title": "",
         "price": "",
@@ -210,66 +216,66 @@ def extract_from_result_item(item) -> Dict[str, str]:
                 data["image_url"] = img_url
                 break
 
-    # Product link - Jumia links are in href of anchor tags
-    # Try multiple selectors to find the product link
-    link_selectors = [
-        "a.core", 
-        "a[href*='/product/']", 
-        "a[href*='/catalog/']",
-        "a[href*='jumia.com']",
-        "a"
-    ]
-    for selector in link_selectors:
-        links = item.select(selector)
-        for link in links:
-            if link and link.get("href"):
-                href = link.get("href")
-                if href and href.strip():
-                    # Accept various Jumia URL patterns
-                    valid_patterns = [
-                        "/product/",
-                        "/catalog/", 
-                        "jumia.com",
-                        "p/" # Some Jumia URLs use p/ for product
-                    ]
-                    
-                    # Check if any pattern matches
-                    if any(pattern in href for pattern in valid_patterns):
-                        if href.startswith("/"):
-                            data["product_link"] = urljoin(BASE_URL, href)
-                        elif href.startswith("http"):
-                            data["product_link"] = href
-                        else:
-                            data["product_link"] = urljoin(BASE_URL, "/" + href)
+    # Product link - FIXED VERSION
+    # If current_url is provided and looks like a product page, use it
+    if current_url and (".html" in current_url or "/product/" in current_url):
+        # This is already a product detail page, use the current URL
+        data["product_link"] = current_url
+    else:
+        # Try multiple selectors to find the product link
+        link_selectors = [
+            "a.core", 
+            "a[href*='/product/']", 
+            "a[href*='/catalog/']",
+            "a[href*='jumia.com']",
+            "a"
+        ]
+        for selector in link_selectors:
+            links = item.select(selector)
+            for link in links:
+                if link and link.get("href"):
+                    href = link.get("href")
+                    if href and href.strip():
+                        # Accept various Jumia URL patterns
+                        valid_patterns = [
+                            "/product/",
+                            "/catalog/", 
+                            "jumia.com",
+                            ".html"
+                        ]
                         
-                        if data["product_link"]:
-                            break
-        
-        # Break outer loop if link found
-        if data["product_link"]:
-            break
-    
-    # Fallback: if no link found yet, try to find any anchor with valid href
-    if not data["product_link"]:
-        all_links = item.find_all("a", href=True)
-        for link in all_links:
-            href = link.get("href", "").strip()
-            if href and (href.startswith("/") or href.startswith("http")):
-                # Filter out tracking/utility links
-                if any(bad in href.lower() for bad in ["javascript:", "mailto:", "tel:", "#"]):
-                    continue
-                if href.startswith("/"):
-                    data["product_link"] = urljoin(BASE_URL, href)
-                else:
-                    data["product_link"] = href
-                if data["product_link"] and "jumia" in data["product_link"].lower():
-                    break
+                        # Check if href matches any valid pattern
+                        if any(pattern in href for pattern in valid_patterns):
+                            # Ensure full URL
+                            if href.startswith("//"):
+                                full_url = "https:" + href
+                            elif href.startswith("/"):
+                                full_url = urljoin(BASE_URL, href)
+                            elif href.startswith("http"):
+                                full_url = href
+                            else:
+                                continue
+                            
+                            # Additional validation: must contain actual product identifier
+                            # Jumia product URLs typically contain numbers or dashes
+                            if re.search(r'[-\d]', full_url):
+                                data["product_link"] = full_url
+                                break
+            
+            if data["product_link"]:
+                break
 
     return data
 
 
-def extract_from_product_page(html: str) -> Dict[str, str]:
-    """Extract detailed information from Jumia product page."""
+def extract_from_product_page(html: str, current_url: Optional[str] = None) -> Dict[str, str]:
+    """
+    Extract detailed information from Jumia product page.
+    
+    Args:
+        html: HTML content of the page
+        current_url: The current page URL (to ensure correct link)
+    """
     soup = BeautifulSoup(html, "html.parser")
     
     data = {
@@ -278,6 +284,7 @@ def extract_from_product_page(html: str) -> Dict[str, str]:
         "rating_full": "",
         "description": "",
         "image_primary": "",
+        "product_link": current_url or "",  # Use current URL as the product link
     }
 
     # Title
@@ -382,7 +389,8 @@ def crawl_jumia_to_csv(
 
         print(f"✅ Found {len(items)} items on page {page_number}")
         
-        page_bases = [extract_from_result_item(item) for item in items]
+        # Pass the current URL to extract_from_result_item (though not needed for search pages)
+        page_bases = [extract_from_result_item(item, search_url) for item in items]
 
         if detailed:
             print(f"   📥 Fetching details (concurrency={concurrency})...")
@@ -391,13 +399,16 @@ def crawl_jumia_to_csv(
                 if not base_item.get("product_link"):
                     return base_item
                 
-                html = fetch_with_retry(session, base_item["product_link"], timeout=15)
-                if html and html.text:
-                    details = extract_from_product_page(html.text)
+                response = fetch_with_retry(session, base_item["product_link"], timeout=15)
+                if response and response.text:
+                    # Pass the product URL to extract_from_product_page
+                    details = extract_from_product_page(response.text, base_item["product_link"])
                     base_item["title"] = details.get("title_full") or base_item.get("title", "")
                     base_item["price"] = details.get("price_full") or base_item.get("price", "")
                     base_item["rating"] = details.get("rating_full") or base_item.get("rating", "")
                     base_item["image_url"] = details.get("image_primary") or base_item.get("image_url", "")
+                    # Ensure product_link stays correct
+                    base_item["product_link"] = details.get("product_link") or base_item["product_link"]
                 return base_item
             
             with concurrent.futures.ThreadPoolExecutor(max_workers=concurrency) as executor:
@@ -496,4 +507,3 @@ if __name__ == "__main__":
         max_products=args.max_products,
         append=args.append,
     )
-
